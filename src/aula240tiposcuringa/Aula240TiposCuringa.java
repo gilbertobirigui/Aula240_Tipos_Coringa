@@ -31,6 +31,9 @@ public class Aula240TiposCuringa {
     
     // esse method funciona pra qualquer tipo usando coringa = ?
     public static void printList(List<?> list){
+        // eu nao posso add elemento na lista
+        list.add(3); // erro de compilacao
+        
         for (Object obj : list){
             System.out.println(obj);
         }
